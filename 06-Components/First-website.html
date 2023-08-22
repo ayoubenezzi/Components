@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnifood hero section</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik", "Inter", sans-serif;
+        color: #444;
+      }
+      body {
+        line-height: 1;
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .hero-container {
+        width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .hero-container-inner {
+        width: 50%;
+      }
+      header {
+        color: #fff;
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+      }
+      nav {
+        color: #e67e22;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+      }
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 48px;
+        line-height: 1.6;
+      }
+      .btn:link,
+      .btn:visited {
+        text-decoration: none;
+        display: inline-block;
+        padding: 16px 32px;
+        background-color: #e67e22;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 9px;
+      }
+      .carousel {
+        background-color: #e67e22;
+        width: 800px;
+        margin: 100px auto;
+        border-radius: 8px;
+        padding: 32px;
+        display: flex;
+        align-items: center;
+        gap: 96px;
+        padding-left: 86px;
+        position: relative;
+      }
+
+      img {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.6);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      }
+
+      .testimonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #ffd4ae;
+      }
+
+      .testimonial-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #ffdfc3;
+      }
+
+      .testimonial-job {
+        font-size: 12px;
+        color: #ffdfc3;
+      }
+
+      .btns {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border: none;
+        background-color: #fff;
+        border-radius: 50px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btns-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #e67e22;
+      }
+
+      .btns-left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .btns-right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+      .dots {
+        position: absolute;
+        border-radius: 50px;
+        display: flex;
+        gap: 12px;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 32px);
+      }
+
+      .dot {
+        border-radius: 50px;
+        height: 12px;
+        width: 12px;
+        border: 2px solid #e67e22;
+        background-color: #fff;
+      }
+
+      .dot-fill {
+        background-color: #e67e22;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div class="hero-container">
+        <div class="hero-container-inner">
+          <h1>A healty meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healty algain. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
+      </div>
+    </header>
+    <div class="carousel">
+      <img src="maria.jpg" alt="Maria de almeida" />
+      <blockquote>
+        <p class="testimonial-text">
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+          nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit quo
+          sunt hic illo fugit."
+        </p>
+        <p class="testimonial-author">Maria de Almeida</p>
+        <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
+      </blockquote>
+      <button class="btns btns-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btns-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button class="btns btns-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btns-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot-fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
